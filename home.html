@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head><title>SheCan</title>
+    
+    
+   <style>
+ body{
+    margin:0;
+    background-color: black;
+}
+.header{
+    background-color:white;
+}
+    .NGOlogo{
+        width: 120px;
+        height: 120px;
+
+    }
+    .ngologo{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        
+    }
+    .ngologo img{
+        align-items: left;
+        position: relative;
+    }
+    h1{
+        font-size: 50px;
+        color:rgb(117, 3, 26);
+        font-family:'Courier New', Courier, monospace;
+
+        
+    }
+    .mimg{
+        align-items: normal;
+    }
+    .header{
+        border: 2px solid white;
+
+    }
+   .mainimg{
+    width : 400px;
+    transition: transform 0.3sec ease;
+   }
+   .mainimg:hover{
+    transform:scale(1.2);
+
+   }
+   .mimg{
+       justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+          color:rgb(117, 3, 26);
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+   }
+   .mimg img{
+    align-items: left;
+    position : relative;
+   }
+
+ .main{
+  
+     border : 2px solid rgb(245, 245, 245);
+   
+ position:relative;
+     overflow:hidden; 
+margin:0%;
+padding : 0%;
+}
+.main p{
+    
+    text-align: center;
+position: absolute;
+background-color: beige;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(157, 18, 46);
+    font-size: 30px;
+    font-weight: bold;
+   
+    padding: 15px;
+   
+  
+
+}
+.main img{
+    width:100%;
+    display:block;
+       object-fit: cover;
+    
+}
+.donate{
+   background-color:  rgb(157, 18, 46);
+   color: white;
+   cursor:pointer;
+       transition: transform 0.3sec ease;
+       height:60px;
+       width:150px;
+       font-size: medium;
+       font-family:cursive;
+       border:2px;
+       border-radius: 20px;
+       
+}
+.donate:hover{
+transform:scale(1.2);
+}
+.main2{
+    background-color: black;
+    color:white;
+    margin: 0%;
+    padding: 0%;
+}
+.maingrid{
+
+       display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            transition: transform 0.3s ease;
+            width: 800px;
+            height: 30px;
+          
+            align-items: center;
+             justify-content: center;
+             margin: 20px auto;
+           
+
+             
+
+       
+        }
+      
+        
+        .ourstory{
+transition: transform 0.3s ease;
+text-align: center;
+  background-color:rgb(117, 3, 26);
+  width:250px;
+  height:23px;
+  color: white;
+  font-weight: bolder;
+  font-family:'Courier New', Courier, monospace;
+        }.ourstory:hover{
+            transform: scale(1.5);
+               background-color: rgb(117, 3, 26);
+        color: white;
+
+
+        }
+        .certificate{
+transition: transform 0.3s ease;
+text-align: center;
+  background-color:rgb(117, 3, 26);
+    width:250px;
+      height:23px;
+      color: white;
+       font-weight: bolder;
+        font-family:'Courier New', Courier, monospace;
+  
+        }.certificate:hover{
+            transform: scale(1.5);
+               background-color: rgb(117, 3, 26);
+        color: white;
+        }
+        .Donate{
+transition: transform 0.3s ease;
+text-align: center;
+  background-color:rgb(117, 3, 26);
+    width:250px;
+      height:23px;
+      color: white;
+       font-weight: bolder;
+        font-family:'Courier New', Courier, monospace;
+        }.Donate:hover{
+            transform: scale(1.5);
+               background-color:rgb(117, 3, 26);
+        color: white;
+        }
+
+
+        .about{
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        .learnmore{
+             background-color:  rgb(157, 18, 46);
+   color: white;
+   cursor:pointer;
+      
+       height:60px;
+       width:150px;
+       font-size: medium;
+       font-family:cursive;
+      
+        }
+        .ViewC{
+                       background-color:  rgb(157, 18, 46);
+   color: white;
+   cursor:pointer;
+      
+       height:60px;
+       width:150px;
+       font-size: medium;
+       font-family:cursive;
+      
+       
+
+        }
+        .button-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size:50px;
+      color:rgb(117, 3, 26);
+        font-family:'Courier New', Courier, monospace;
+
+}
+        .main3{
+            background-color: black;
+        }
+    .finalimg{
+        width: 400px;
+        height:400px;
+    }
+     .main3{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        color: white;
+        text-align: center;
+        
+    }
+    .main3 img{
+        align-items: left;
+        position: relative;
+    }
+    .main3 p{
+      
+        font-size: large;
+        align-items:center
+    }
+   
+.join-container{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+.jointeam{
+    cursor: pointer;
+    width:150px;
+    height: 60px;
+    font-family: cursive;
+    font-size: medium;
+    background-color: rgb(117, 3, 26);
+    color: white;
+}
+h3{
+    
+        font-size:30px;
+      color:rgb(117, 3, 26);
+        font-family:'Courier New', Courier, monospace;
+}  
+.footer p{
+        font-size:20px;
+      color:rgb(117, 3, 26);
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bolder;
+}
+.insta{
+       color: white;
+   cursor:pointer;
+      
+    height:40px;
+       width:100px;
+       font-size: medium;
+       font-family:cursive;
+        background-color: rgb(117, 3, 26);
+       color: white;
+        
+}
+.linkedin{
+       color: white;
+   cursor:pointer;
+      
+       height:40px;
+       width:100px;
+       font-size: medium;
+       font-family:cursive;
+       background-color: rgb(117, 3, 26);
+       color: white;
+      
+    
+}
+.finalbuttons{
+    gap: 40px;
+}
+ </style> 
+
+    
+    </head>
+    <body>
+        
+        <div class = "header">
+<div class = "ngologo">
+    <img class ="NGOlogo" src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=296,fit=crop,q=95/Aq2NJ23MzBH2rx2j/she-YlenJon1O7ieeEoa.jpg">
+<h1> She Can ! Foundation</h1></div>
+<br><br><div class = "mimg" >
+<a href= "https://in.images.search.yahoo.com/images/view;_ylt=Awr1QjNWCyBqRmMVeLe9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzM5MDllMGRmZDY2ZWFkODY1YjY4NDZlN2NjNDU5ZTkzBGdwb3MDMwRpdANiaW5n?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dshe%2Bcan%2Bfoundation%2Bngo%26ei%3DUTF-8%26type%3DE210IN1316G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D3&w=899&h=505&imgurl=lookaside.instagram.com%2Fseo%2Fgoogle_widget%2Fcrawler%2F%3Fmedia_id%3D3319385827989657008&rurl=https%3A%2F%2Fwww.instagram.com%2F_shecanfoundation_%2F&size=147KB&p=she+can+foundation+ngo&oid=3909e0dfd66ead865b6846e7cc459e93&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=She+Can+Foundation+%7C+GOVT+NGO+%F0%9F%92%9B%F0%9F%99%8B%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F+%28%40_shecanfoundation_%29+%E2%80%A2+Instagram+...&b=0&ni=75&no=3&ts=&tab=organic&sigr=lcH7NlllOi5w&sigb=WyeuTx_LmUJ6&sigi=bhOgDAeEuD5v&sigt=fLUlTMA2QgEy&.crumb=0ZDu2CML0tD&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210IN1316G0"><img class = "mainimg" src = "https://tse4.mm.bing.net/th/id/OIP.78GOXWLIq3lXKAZpjHmX1AHaEK?pid=Api&P=0&h=180">
+</a>
+<p>
+        She Can ! Foundation is a non-governmental organization registered under the Indian Society Act , 1860 , Dedicating to empowering women and creating a more equitable society
+    It aims to create a group of society that encourages gender equality and provide neccessary eminities like education and health-care to those hwo are in deeply need of them.
+        
+   Please understand our motive as we thrive in contributing to make this world a better place with the help of kindness and giving hope to those vulnerable.
+    
+</p>
+</div>
+</div>
+<div class = "main">
+    <img src = "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhcml0eXxlbnwwfHwwfHx8MA%3D%3D">
+<p>We dont ask for much, Please help with what you can.
+   As Each Donation Matters
+  <a href = "https://pages.razorpay.com/shecanfoundation"> <button class = "donate">Donate Now</button>
+</a></p>
+</div>
+<div class = "main2">
+<div class = "maingrid">
+      <a href = "https://shecanfoundation.org/our-story">
+    <p class = "ourstory">OUR STORY</p></a>
+   
+   <a href = "https://shecanfoundation.org/our-certificate">
+    <p class = "certificate">CERTIFICATE</p></a>
+    <a href = "https://shecanfoundation.org/donate"><p class = "Donate">DONATE</p></a>
+</div>
+<br>
+<p class = "about"> We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure that our programs are effective and sustainable. 
+    Through advocacy campaigns and initiatives, we raise awareness of women's issues. We rely on the support of individuals, corporations, and other organizations to achieve our vision. 
+    We believe that by working together, we can revolutionize society and create a better world for all.</p>
+
+<div class ="button-container">    <a href = "https://shecanfoundation.org/donate">
+<button class = "learnmore">Learn More</button>
+</a>
+<a href = "https://shecanfoundation.org/our-certificate">
+<button class = "ViewC">View Our Certificate</button>
+
+</a>
+</div>
+</div>
+
+<br><br>
+<h2>JOIN OUR
+    TEAM
+</h2>
+
+<div class = "main3">
+<img class = "finalimg" src = "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=963,fit=crop/Aq2NJ23MzBH2rx2j/1-AR0eoOKWL4sXJRgY.png">
+
+<p>Join our team and make a difference in the lives of women in need.
+     At She Can Foundation, we are committed to creating positive change and empowering women in communities across the globe.
+      By joining our team, you will have the opportunity to contribute your time, skills, and ideas to help make a real impact in the lives of women.
+       Whether you are passionate about education, health, or providing support during times of crisis, there is a place for you on our team. 
+       Join us today and be a part of an organization that is dedicated to creating a more equitable society, one woman at a time.</p>
+
+</div>
+<div class = "join-container">
+<a href = "https://shecanfoundation.org/donate">
+    <button class ="jointeam">Join Us</button></a></div>
+
+    <div class = "footer">
+        <h3>CONTACT US </h3>
+        <p>Email: president@shecanfoundation.org</p>
+<p>Contact: +91- 8283841830</p>
+<div class = "finalbuttons">
+<a href = "https://www.instagram.com/_shecanfoundation_">
+    <button class = "insta">Instagram </button>
+</a>
+<a href = "https://www.linkedin.com/company/shecanfoundation/">
+    <button class = "linkedin">Linked in</button>
+
+</a>
+</div>  
+</div>
+<p> klenwel;</p>
+      </body>
+</html>
